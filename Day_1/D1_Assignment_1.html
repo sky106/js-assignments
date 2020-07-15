@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D1_Assignment_1</title>
+    
+</head>
+<body>
+   
+    <h1>Various methods in console function</h1>
+
+    <h3>1. console.log()</h3>
+    <p> - Outputs a message to the console</p>
+
+    <h3>2. console.error()</h3>
+    <p> - Outputs an error message to the console</p>
+
+    <h3>3. console.warn()</h3>
+    <p> - Outputs a warning message to the console</p>
+
+    <h3>4. console.time()</h3>
+    <p> - Starts a timer (can track how long an operation takes)</p>
+
+    <h3>5. console.table()</h3>
+    <p> - Displays tabular data as a table</p>
+
+    <h3>6. console.timeEnd()</h3>
+    <p> - Stops a timer that was previously started by console.time()</p>
+
+    <h3>7. console.info()</h3>
+    <p> - Outputs an informational message to the console</p>
+
+    <h3>8. console.group()</h3>
+    <p> - Creates a new inline group in the console. This indents following console messages by an additional level, until console.groupEnd() is called</p>
+
+    <h3>9. console.groupEnd()</h3>
+    <p> - Exits the current inline group in the console</p>
+     
+    <h3>10. console.assert()</h3>
+    <p> - Writes an error message to the console if the assertion is false</p>
+
+    <h3>11. console.clear()</h3>
+    <p> - Clears the console</p>
+    
+    <script type="text/javascript">
+
+        var a = {name:"Sky", age:"24", city:"Mumbai"}
+        var b = {name:"Ravi", age:"25", city:"Paris"}
+        var c = {name:"Pramod", age:"26", city:"Mexico"}
+
+        console.log("Hello world, Sky is cool...!!")      
+        console.error("An error occurred !")
+        console.warn("It is a Warning !!!")
+        console.time('Time taken')
+        console.table({a ,b ,c})
+        console.info("This is an information message")
+        console.timeEnd('Time taken')
+        console.log('%c Custom message in green colour','color:green;')
+        console.group('My group')
+        console.log("Hello again, this time inside a group, with a label!")
+        console.groupEnd()
+        console.log("Hello again, this time outside a group, with a label!")
+        console.assert(5 + 5 == 11, "Expression is wrong")
+        //console.clear()             //Clears the console
+
+    </script>
+    
+</body>
+</html>

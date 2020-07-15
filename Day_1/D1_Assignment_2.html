@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D1_Assignment_2</title>
+    
+</head>
+<body>
+   
+    <h2>Difference between var , let and const</h2>
+
+    <h3>var - </h3>
+    <p> - The scope of a variable defined with the keyword “var” is limited to the “function” within which it is defined.
+    <br/> - If it is defined outside any function, the scope of the variable is global.
+        var is “function scoped”.
+    </p>
+
+    <h3>let - </h3>
+    <p> - The scope of a variable defined with the keyword “let” or “const” is limited to the “block” defined by curly braces i.e. {} .
+    <br/> - “let” and “const” are“block scoped”.
+    </p>
+    
+    <h3>const - </h3>
+    <p> - The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. <br/> - However if a variable is defined with keyword const, it cannot be reassigned.
+        “const” cannot be re-assigned to a new value. However it CAN be mutated.
+    </p>
+
+    <h3>
+        <mark>var variables can be updated and re-declared within its scope; <br/>let variables can be updated but not re-declared; <br/>const variables can neither be updated nor re-declared.</mark>
+    </h3>
+    
+
+    <script type="text/javascript">
+        //var
+        var num1 = 10
+        num1 += 1
+        console.log("var num1 = "+num1)
+        num1 = 15
+        console.log("var num1 = "+num1)
+
+        //let
+        {
+            let num2 = 20
+            num2 += 1;
+            console.log("let num2 = "+num2)
+            //let num2 = 30                     //create error - we cannot re-declared let variables 
+            //console.log("let num2 = "+num2)
+        }
+        //console.log("let num2 = "+num2)      //create error - let variables are block scoped
+
+        //const
+        {
+            const num3 = 30
+            console.log("const num3 = "+num3)
+            //num3 += 1                       //create error - we cannot update or re-declared const variables 
+            //console.log("const num3 = "+num3)
+        }
+        //console.log("const num3 = "+num3)
+    </script>
+
+</body>
+</html>
