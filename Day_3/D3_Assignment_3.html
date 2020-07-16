@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3_Assignment_3</title>
+</head>
+<body>
+    <!-- Write a program to take marks as input from the user and grade him accordingly. Use Conditional
+    statements. Also the same code using switch or ternary
+    input: 50
+    Output : Marks are 50 and grade is B -->
+    <h2>Check Console Window (Press F12) </h2>
+
+    <script type="text/javascript">
+
+    let marks = Number(prompt("Enter your marks (In percentage) : "))
+    
+    //By using if else ladder
+    console.log("------------By using if else ladder------------")
+    if (Number.isNaN(marks) == false && marks>=0 && marks<=100){
+
+        if(marks<35){
+            console.log(`Marks are ${marks} and grade is F`)
+        }
+        else if(marks>=35 && marks<50){
+            console.log(`Marks are ${marks} and grade is E`)
+        }
+       else if(marks>=50 && marks<55){
+            console.log(`Marks are ${marks} and grade is D`)
+        }
+        else if(marks>=55 && marks<60){
+            console.log(`Marks are ${marks} and grade is D+`)
+        }
+        else if(marks>=60 && marks<65){
+            console.log(`Marks are ${marks} and grade is C`)
+        }
+        else if(marks>=65 && marks<70){
+            console.log(`Marks are ${marks} and grade is C+`)
+        }
+        else if(marks>=70 && marks<75){
+            console.log(`Marks are ${marks} and grade is B`)
+        }
+        else if(marks>=75 && marks<80){
+            console.log(`Marks are ${marks} and grade is B+`)
+        }
+        else if(marks>=80 && marks<90){
+            console.log(`Marks are ${marks} and grade is A`)
+        }
+        else{
+            console.log(`Marks are ${marks} and grade is A+`)
+        }    
+    }
+    else{
+        console.error(`*You entered ${marks} which is a Invalid Input...!!!`)
+    }
+
+
+    //By using switch case
+    console.log("------------By using switch case------------")
+    if (Number.isNaN(marks) == false && marks>=0 && marks<=100){
+        switch (true) {
+            case (marks<35):
+                console.log(`Marks are ${marks} and grade is F`)
+                break;
+            case (marks>=35 && marks<50):
+                console.log(`Marks are ${marks} and grade is E`)
+                break;
+            case (marks>=50 && marks<55):
+                console.log(`Marks are ${marks} and grade is D`)
+                break;
+            case (marks>=55 && marks<60):
+                console.log(`Marks are ${marks} and grade is D+`)
+                break;
+            case (marks>=60 && marks<65):
+                console.log(`Marks are ${marks} and grade is C`)
+                break;
+            case (marks>=65 && marks<70):
+                console.log(`Marks are ${marks} and grade is C+`)
+                break;
+            case (marks>=70 && marks<75):
+                console.log(`Marks are ${marks} and grade is B`)
+                break;
+            case (marks>=75 && marks<80):
+                console.log(`Marks are ${marks} and grade is B+`)
+                break;
+            case (marks>=80 && marks<90):
+                console.log(`Marks are ${marks} and grade is A`)
+                break;
+            default:
+                console.log(`Marks are ${marks} and grade is A+`)
+                break;
+        }
+    }
+    else{
+        console.error(`*You entered ${marks} which is a Invalid Input...!!!`)
+    }
+
+
+    //By using ternary operator
+    console.log("------------By using ternary operator------------")
+    if (Number.isNaN(marks) == false && marks>=0 && marks<=100){
+        let check =
+            marks<35 ? `Marks are ${marks} and grade is F`
+            : marks>=35 && marks<50 ? `Marks are ${marks} and grade is E`
+            : marks>=50 && marks<55 ? `Marks are ${marks} and grade is D`
+            : marks>=55 && marks<60 ? `Marks are ${marks} and grade is D+`
+            : marks>=60 && marks<65 ? `Marks are ${marks} and grade is C`
+            : marks>=65 && marks<70 ? `Marks are ${marks} and grade is C+`
+            : marks>=70 && marks<75 ? `Marks are ${marks} and grade is B`
+            : marks>=75 && marks<80 ? `Marks are ${marks} and grade is B+`
+            : marks>=80 && marks<90 ? `Marks are ${marks} and grade is A`
+            : `Marks are ${marks} and grade is A+`
+        console.log(check);
+    }
+    else{
+        console.error(`*You entered ${marks} which is a Invalid Input...!!!`)
+    }
+
+
+    </script>
+    
+</body>
+</html>

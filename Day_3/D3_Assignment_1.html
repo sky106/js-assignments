@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3_Assignment_1</title>
+</head>
+<body>
+    <!-- Take a number from a user and write a function which checks whether the number is even or
+    odd. Assign the result to a variable and log that variable in the console.
+    Example Input: 23
+    Output: The number entered is 23 and Number is odd -->
+    <h2>Check Console Window (Press F12) </h2>
+    
+    <script type="text/javascript">
+
+        let number = Number(prompt("Enter The Number (Integer only) : ",2))
+
+        let check = function(num){
+            
+                if (num % 2 == 0){
+                    return `The number entered is ${num} and Number is Even`
+                }
+                else{
+                    return `The number entered is ${num} and Number is Odd`
+                }            
+            }
+            
+        if (Number.isInteger(number) == true){
+            console.log(check(number))
+        }
+        else{
+            console.error(`*You entered ${number} which is a Invalid Input...!!!`)
+        }
+
+    </script>
+
+</body>
+</html>
