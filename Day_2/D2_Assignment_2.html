@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D2_Assignment_2</title>
+</head>
+<body>
+    <!-- Explain with examples the remaining methods of String and Array -->
+    <h1>Methods of String and Array... </h1>
+
+    <h2><u>String -</u></h2>
+   
+    <h3>1. substring()</h3>
+    <p> - Extracts the characters from a string, between two specified indices</p>
+
+    <h3>2. replace()</h3>
+    <p> - Searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced</p>
+
+    <h3>3. slice()</h3>
+    <p> - Extracts a part of a string and returns a new string</p>
+
+    <h3>4. startsWith()</h3>
+    <p> - Checks whether a string begins with specified characters</p>
+
+    <h3>5. trim()</h3>
+    <p> - Removes whitespace from both ends of a string</p>
+
+    <h3>6. concat()</h3>
+    <p> - Joins two or more strings, and returns a new joined strings</p>
+
+    <h3>7. repeat()</h3>
+    <p> - Returns a new string with a specified number of copies of an existing string</p>
+
+
+    <h2><u>Array -</u></h2>
+  
+    <h3>1. includes()</h3>
+    <p> - Check if an array contains the specified element</p>
+
+    <h3>2. indexOf()</h3>
+    <p> - Search the array for an element and returns its position</p>
+
+    <h3>3. join()</h3>
+    <p> - Joins all elements of an array into a string</p>
+
+    <h3>4. slice()</h3>
+    <p> - Selects a part of an array, and returns the new array</p>
+
+    <h3>5. splice()</h3>
+    <p> - Adds/Removes elements from an array</p>
+
+    <h3>6. from()</h3>
+    <p> - Creates an array from an object</p>
+
+    <h3>7. forEach()</h3>
+    <p> - Calls a function for each array element</p>
+
+    <h3>8. fill()</h3>
+    <p> - Fill the elements in an array with a static value</p>
+
+    <script type="text/javascript">
+
+        console.log("------------String methods--------------")
+        let text = "Sky welcome to LetsUpgrade  "
+        //prints original string
+        console.log(`Original String : ${text}`)
+        console.log(`Substring : ${text.substring(4,11)}`)
+        console.log(`Replace : ${text.replace('e','o')}`)
+        console.log(`Slicing : ${text.slice(8,23)}`)
+        console.log(`Startwith  : ${text.startsWith("Sky")}`)
+        console.log(`Trim : ${text.trim()}`)
+        console.log(`Concate : ${text.concat("hello guys")}`)
+        console.log(`Repeat : ${text.repeat(3)}`)
+
+        console.log("------------Array methods--------------")
+        let arr = ['sky', true, 46, 12, 'hello', 23.7, 46]
+
+        //prints original array
+        console.log(arr)
+
+        console.log(arr.includes("Sky"))
+
+        console.log(arr.indexOf(46))
+
+        console.log(arr.join())
+
+        console.log(arr.slice(4,-1))
+
+        let temp = arr
+        console.log(temp.splice(2,2,'LetsUpgrade',33,89))
+
+        let myarr = Array.from("aeiou")
+        console.log(myarr)
+
+        //prints each element
+        arr.forEach(displayEach)
+        function displayEach(item,index){
+            console.log(index +" : "+ item)
+        }
+
+        console.log(arr.fill(50,0,2)) 
+
+    </script>
+
+</body>
+</html>
