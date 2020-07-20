@@ -1,2 +1,2 @@
 # js-assignments
-Solution of All Assignments of Java FCS course (Day 1 - Day 7)
+Solution of All Assignments of JavaScript FCS course (Day 1 - Day 8)
