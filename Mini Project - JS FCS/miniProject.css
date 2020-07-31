@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+* {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+  font-family: Asap, sans-serif;
+  background-color:lightskyblue;
+  color: black;
+}
+
+body {
+  /* max-width: 10rem; */
+  margin: 0;
+  padding: 1rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+img{
+  width: 23px;
+  height: 23px;
+  position: relative;
+ }
+ 
+label {
+  font-size: 0.9em;
+ }
+ 
+input{
+  padding: 5px 15px;
+  font-size: 24px;
+  outline: none;
+  border: solid black;
+  border-radius: 25px;
+}
+
+button{
+  padding: 7px 25px;
+  font-size: 24px;
+  text-align: center;
+  outline: none;
+  border: solid lightskyblue;
+  border-radius: 25px;
+  background-color: black;
+  color:white;
+}
+button:hover{
+  border: solid black;
+  background-color:white;
+  color:black;
+}
+
+.line1{
+  height: 5px;
+  background-color: black;
+}
+
+.line2{
+  height: 2px;
+  background-color: black;
+}
