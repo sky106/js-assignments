@@ -1,2 +1,2 @@
 # js-assignments
-Solution of All Assignments of JavaScript FCS course (Day 1 - Day 8) 
+Solutions of All Assignments of JavaScript FCS course which is provided by LetsUpgrade Community (Starting Date -  )  
